@@ -4,22 +4,19 @@
     <router-view />
 
     <!-- 底部导航 -->
-    <div class="nav-botton">
-      <router-link to="/home">
-        <label>首页</label>
-      </router-link>
-      <router-link to="/find">
-        <label>发现</label>
-      </router-link>
-      <router-link to="/order">
-        <label>订单</label>
-      </router-link>
-      <router-link to="/my">
-        <label>我的</label>
-      </router-link>
-    </div>
+    <NavBottom />
   </div>
 </template>
+
+<script>
+import NavBottom from './components/NavBottom';
+
+export default {
+  components: {
+    NavBottom
+  }
+}
+</script>
 
 <style>
 /* @import './assets/css/index.css' */
