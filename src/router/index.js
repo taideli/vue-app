@@ -1,14 +1,28 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Find from '../views/Find.vue'
+import Order from '../views/Order.vue'
+import My from '../views/My.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
+    path: '/home',
     component: Home
+  },
+  {
+    path: '/find',
+    component: Find
+  },
+  {
+    path: '/order',
+    component: Order
+  },
+  {
+    path: '/my',
+    component: My
   },
   {
     path: '/about',

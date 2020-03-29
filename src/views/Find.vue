@@ -1,12 +1,12 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    发现页面展示
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'Home',
+  name: 'Find',
 }
 </script>

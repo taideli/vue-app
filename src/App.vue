@@ -1,32 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <!-- 路由展示 -->
+    <router-view />
+
+    <!-- 底部导航 -->
+    <div class="nav-botton">
+      <router-link to="/home">
+        <label>首页</label>
+      </router-link>
+      <router-link to="/find">
+        <label>发现</label>
+      </router-link>
+      <router-link to="/order">
+        <label>订单</label>
+      </router-link>
+      <router-link to="/my">
+        <label>我的</label>
+      </router-link>
     </div>
-    <router-view/>
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+/* @import './assets/css/index.css' */
 </style>
